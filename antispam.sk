@@ -1,0 +1,12 @@
+# Made by AmazingPika
+
+on join:
+    set {msg::%player%} to ""
+
+on chat:
+    if {msg::%player%} is message:
+        if player does not have permission "spam.bypass":
+            cancel event
+            send "&3&lLunar&f&lGens &8>> &cYou cannot send the same message twice"
+    else:
+        set {msg::%player%} to message
