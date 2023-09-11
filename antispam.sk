@@ -1,5 +1,18 @@
 # Made by AmazingPika
 
+options:
+    color: &x&0&8&4&c&f&b
+    prefix: &x&0&8&4&c&f&b&lForRealVanilla &7&o> {@color}
+    
+on load:
+    send " █████╗ ██╗████████╗██╗      ███████╗██████╗  █████╗ ███╗   ███╗" to console
+    send "██╔══██╗██║╚══██╔══╝██║      ██╔════╝██╔══██╗██╔══██╗████╗ ████║" to console
+    send "███████║██║   ██║   ██║█████╗███████╗██████╔╝███████║██╔████╔██║" to console
+    send "██╔══██║██║   ██║   ██║╚════╝╚════██║██╔═══╝ ██╔══██║██║╚██╔╝██║" to console
+    send "██║  ██║██║   ██║   ██║      ███████║██║     ██║  ██║██║ ╚═╝ ██║" to console
+    send "╚═╝  ╚═╝╚═╝   ╚═╝   ╚═╝      ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝" to console
+    send "                        -AmazingPika                            " to console
+
 on join:
     set {msg::%player%} to ""
 
@@ -7,6 +20,6 @@ on chat:
     if {msg::%player%} is message:
         if player does not have permission "spam.bypass":
             cancel event
-            send "&3&lLunar&f&lGens &8>> &cYou cannot send the same message twice"
+            send "{@prefix}You cannot send the same message twice"
     else:
         set {msg::%player%} to message
