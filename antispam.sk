@@ -5,13 +5,16 @@ options:
     prefix: &x&0&8&4&c&f&b&lForRealVanilla &7&o> {@color}
     
 on load:
-    send " █████╗ ██╗████████╗██╗      ███████╗██████╗  █████╗ ███╗   ███╗" to console
-    send "██╔══██╗██║╚══██╔══╝██║      ██╔════╝██╔══██╗██╔══██╗████╗ ████║" to console
-    send "███████║██║   ██║   ██║█████╗███████╗██████╔╝███████║██╔████╔██║" to console
-    send "██╔══██║██║   ██║   ██║╚════╝╚════██║██╔═══╝ ██╔══██║██║╚██╔╝██║" to console
-    send "██║  ██║██║   ██║   ██║      ███████║██║     ██║  ██║██║ ╚═╝ ██║" to console
-    send "╚═╝  ╚═╝╚═╝   ╚═╝   ╚═╝      ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝" to console
-    send "                        -AmazingPika                            " to console
+    send " █████╗ ███╗   ██╗████████╗██╗      ███████╗██████╗  █████╗ ███╗   ███╗" to console
+    send "██╔══██╗████╗  ██║╚══██╔══╝██║      ██╔════╝██╔══██╗██╔══██╗████╗ ████║" to console
+    send "███████║██╔██╗ ██║   ██║   ██║█████╗███████╗██████╔╝███████║██╔████╔██║" to console
+    send "██╔══██║██║╚██╗██║   ██║   ██║╚════╝╚════██║██╔═══╝ ██╔══██║██║╚██╔╝██║" to console
+    send "██║  ██║██║ ╚████║   ██║   ██║      ███████║██║     ██║  ██║██║ ╚═╝ ██║" to console
+    send "╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝      ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝" to console
+    send "                             -AmazingPika                              " to console
+    create directory "/plugins/antispam/"
+    create file "/plugins/antispam/credits.txt"
+    write "https://github.com/AmazingPika" at line 1 to file "/plugins/antispam/credits.txt"
 
 on join:
     set {msg::%player%} to ""
